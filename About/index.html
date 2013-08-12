@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" type="text/css" href="../styles.css">
  <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -9,13 +10,15 @@
 </head>
 <body>
 <div class="content">
-    <div class="logo">
+<img src="../element.jpg" class="logo" id="element" alt="trees"/>
+<img src="../ACHAPOKA_SITE_ELEMENT_17(logofix).png" class="logo" id="ashleylogo" alt="ashley"/> 
+<img src="../element_1.jpg" class="logo" id="element_1"alt="cross"/>
+    <!---<div class="logo">
     <p id="plus">✛</p>  
-    <h1 id="Renee"><img src="../logo.jpg" alt="logo" /></h1>
+    <h1 id="Renee"><img src="logo.jpg" alt="logo" /></h1>
     <p id="plus2">✛</p>
-    </div>  
+    </div>  -->
 
-      
       <ul class="navigation">
         <li><a href="index.html" target="_blank">HOME</a></li>
         <li><a href="about/index.html" target="_blank">ABOUT</a></li>  
@@ -24,7 +27,63 @@
         <li><a href="contact/index.html" target="_blank">CONTACT</a></li>  
       </ul>
 
-<div class="interests">
+<p id="intro">A bio in motion</p>
+   <div class="long" id="tree">
+      <div class="overlay">
+          <span>Hiking is a big part of my life. -Redwoods, California</span>
+      </div>
+  </div>
+   <div class="interest" id="hiking">
+    <div class="overlay">
+              <span>I need to buy a tent soon. -Asheville, North Carolina</span>
+          </div>
+      </div>
+  <div class="interest" id="sea">
+      <div class="overlay">
+          <span>-Cape May, New Jersey</span>
+      </div>
+  </div>
+      <div class="interest" id="tam">
+          <div class="overlay">
+              <span>This is second</span>
+          </div>
+      </div>
+ 
+    <div class="long" id="philly">
+      <div class="overlay">
+          <span>The town I have lived in for 28 years.</span>
+      </div>
+  </div>
+      <div class="interest" id="klimt">
+          <div class="overlay">
+              <span>This is second</span>
+          </div>
+      </div>
+  <div class="interest" id="petrified">
+    <div class="overlay">
+              <span>This is third</span>
+          </div>
+      </div>  
+      
+    <div class="long" id="tree">
+      <div class="overlay">
+          <span>This is first</span>
+      </div>
+  </div>
+      <div class="interest" id="tam">
+          <div class="overlay">
+              <span>This is second</span>
+          </div>
+      </div>
+  <div class="interest" id="ashley">
+    <div class="overlay">
+              <spans>This is third</span>
+          </div>
+      </div>      
+                       
+
+
+<!--<div class="interests">
 <img src="../trees.jpg" class="interest" id="tree" alt="trees"/>
 <img src="../tam.jpg" class="interest" id="tam" alt="tam"/> 
 <img src="../ashley5.jpg" class="interest" id="ashley"alt="ashley"/>
@@ -34,18 +93,31 @@
 <img src="../stars.jpg" class="interest" id="stars" alt="stars"/>
 <img src="../food.jpg" class="interest" id="food" alt="food"/>
 <img src="../sand.jpg" class="interest" id="sand" alt="sand"/>
-
-
-
-
 </div>  
-
 </div> 
+-->
 
 <script>
-if($) {
-   alert("jQuery is installed!");
-}
+(function($) {
+  console.log("hello world");
+  $(".interest").mouseenter( function(event) {
+    $(this).find(".overlay").animate({"top" : "0%"}, { queue: false, duration:200 });
+  });
+  
+  $(".interest").mouseleave( function(event) {
+    $(this).find(".overlay").animate({"top" : "-100%"}, { queue: false, duration:200 });
+  });
+  $(".long").mouseenter( function(event) {
+    $(this).find(".overlay").animate({"top" : "0%"}, { queue: false, duration:200 });
+  });
+  
+  $(".long").mouseleave( function(event) {
+    $(this).find(".overlay").animate({"top" : "-100%"}, { queue: false, duration:200 });
+  });
+
+  
+  
+})(jQuery);
 </script> 
 </body>
 </html>
