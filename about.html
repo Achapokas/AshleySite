@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ <link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <title>Ashley Renee</title>
+</head>
+<body>
+<div class="content_about">
+<img src="element.jpg" class="logo" id="element" alt="trees"/>
+<img src="ACHAPOKA_SITE_ELEMENT_17(logofix).png" class="logo" id="ashleylogo" alt="ashley"/> 
+<img src="element_1.jpg" class="logo" id="element_1"alt="cross"/>
+    <!---<div class="logo">
+    <p id="plus">✛</p>  
+    <h1 id="Renee"><img src="logo.jpg" alt="logo" /></h1>
+    <p id="plus2">✛</p>
+    </div>  -->
+
+      <ul class="navigation">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>  
+        <li><a href="resume.html">RESUME</a></li>  
+        <li><a href="http://wordpress.org/">BLOG</a></li>  
+        <li><a href="contact.html">CONTACT</a></li>  
+      </ul>
+
+   <div class="long" id="tree">
+      <div class="overlay">
+          <span>On my first backpacking trip, I lost sight of camp at dusk. </span>
+      </div>
+  </div>
+   <div class="long" id="hiking">
+    <div class="overlay">
+              <span>I didn't find my tent until 5am the following morning.</span>
+          </div>
+      </div>
+  <div class="long" id="sea">
+      <div class="overlay">
+          <span>In the interceding hours, the weather was ominous. </span>
+      </div>
+  </div>
+ 
+    <div class="long" id="philly">
+      <div class="overlay">
+          <span>Humid, wet, thunderous, clear and 40 degree drop no less.</span>
+      </div>
+  </div>
+  <div class="long" id="petrified">
+    <div class="overlay">
+              <span>A lot of things went through my mind during that period. </span>
+          </div>
+      </div>  
+      
+    <div class="long" id="ononon">
+      <div class="overlay">
+          <span>At one moment I recall a break from exhaustion. Curled up in a ball, drenched, and sore  </span>
+      </div>
+  </div>
+      <div class="long" id="italy">
+          <div class="overlay">
+              <span>I found solace in the milky way and shooting stars in the universe.</span>
+          </div>
+      </div>                      
+        <div class="long" id="food">
+          <div class="overlay">
+              <span>In spite of wet socks, sore limbs, and exhaustion, I got up, put my head lamp on trekked back to camp.</span>
+          </div>
+      </div>  
+         <div class="long" id="graf">
+          <div class="overlay">
+              <span>I have been walking ever since.</span>
+          </div>
+      </div> 
+
+  <div class="footer_about"> 
+      <div id="box">
+      </div>
+        <p id="tagline">STRIKE GENTLY</p>
+      <ul class="social_icons">
+      <li><a href="https://www.facebook.com/ashley.chapokas" target="blank"><img src="ACHAPOKA_SITE_ELEMENT_11.png" alt="faceboook"/></a></li>
+      <li><a href="https://www.twitter.com/Achapokas" target="blank"><img src="ACHAPOKA_SITE_ELEMENT_12.png" alt="twitter"/></a></li>
+      <li><img src="ACHAPOKA_SITE_ELEMENT_13.png"/></li>
+      <li><img src="ACHAPOKA_SITE_ELEMENT_14.png"/></li>
+    </ul>
+     </div> 
+</div>     
+<!--<div class="interests">
+<img src="../trees.jpg" class="interest" id="tree" alt="trees"/>
+<img src="../tam.jpg" class="interest" id="tam" alt="tam"/> 
+<img src="../ashley5.jpg" class="interest" id="ashley"alt="ashley"/>
+<img src="../philly.jpg" class="interest" id="philly" alt="philly"/>
+<img src="../klimt.jpg" class="interest" id="klimt" alt="klimt"/>
+<img src="../petrified-wood.jpg" class="interest" id="petrified" alt="wood"/>
+<img src="../stars.jpg" class="interest" id="stars" alt="stars"/>
+<img src="../food.jpg" class="interest" id="food" alt="food"/>
+<img src="../sand.jpg" class="interest" id="sand" alt="sand"/>
+</div>  
+</div> 
+-->
+
+<script>
+(function($) {
+  console.log("hello world");
+  $(".long").mouseenter( function(event) {
+    $(this).find(".overlay").animate({"top" : "0%"}, { queue: false, duration:200 });
+  });
+  
+  $(".long").mouseleave( function(event) {
+    $(this).find(".overlay").animate({"top" : "-100%"}, { queue: false, duration:200 });
+  });
+})(jQuery);
+</script> 
+</body>
+</html>
