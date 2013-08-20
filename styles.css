@@ -68,6 +68,7 @@ table {
 
 html *{
 font-family: 'Quattrocento Sans', sans-serif;
+font-size:100%;
 
 }
 
@@ -89,76 +90,37 @@ a:active{
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .content{
-	width: 980px; /*960* change to 980*/
+  width:100%;
 	height:1580px;
 	margin:auto;
-	margin-top: 10px; /*10/960*/
+	margin-top: 1.03040816%; /*10/980*/
 
 }
 
 .content_about{
-  width: 980px; /*960* change to 980*/
+  width:100%;
   height:1300px;
   margin:auto;
-  margin-top: 10px; /*10/960*/
+  margin-top: 1.03040816%; /*10/980*/
 
 }
 .content_contact{
-  width: 980px; /*960* change to 980*/
+  width:100%;
   height:900px;
   margin:auto;
-  margin-top: 10px; /*10/960*/
+  margin-top: 10px; /*10/980*/
 
 }
 .logo{
-  margin-right: 45px;
-  margin-left: 55px;
-  margin-top: 10px;
+  margin-right: 4.59183673%; /*45/980*/
+  margin-left: 5.6122%; /*55/980*/
+  margin-top: 1.3040816%;
 }
 
-
-
-/*.logo{
-height:150px;
-width:100%;
-/*border:1px solid black;
-display:inline-block;
-margin-left:0;
-}*/
-
-/*.logo #Renee img{
-/*font-size:100px;
-text-align: center;
-margin-top:10px;
-border:1px solid black;	
-display:inline-block;
-width:68.7%; /*660px/960
-max-width:660px;
-height:150px;
-/*border: 1px solid black;
-margin-top: -12.2916667%; /*-118/960
-margin-left: 15.625%; /*150/960
-}*/
-
-/*#plus{
-	font-size:100px;
-	/*border:1px solid black;
-	display:inline-block;
-	color:gold;
-}
-
-#plus2{
-	font-size:100px;
-	/*border:1px solid black;
-	display:inline-block;
-	color:gold;	
-  float:right;
-  margin-top: -16.1458333%; /*-155/960
-}
-*/
 
 .navigation li{
 display: inline-block;
@@ -176,32 +138,39 @@ text-decoration:none;
 color:gold;
 }
 
-img#ashley.photos{
- margin: 0 72px;
+#photo_container{
+  width:100%;
+ max-width:980px; 
+ height:1244px;
+ margin:0 7.3469%; /*72/980*/
+ position:relative;
+}
+
+img #photo_container{
+  position:absolute;
 }
 
 #first_sentence{
-display:block;
-position:relative;
-top:-1150px;
-margin-left: 77px;
-font-size: 42px;
-width:28%;
+z-index: 300;
+position:absolute;
+top: 7.1428%; /*70/980*/
+margin-left: 4.081632%;/*40/980*/
+font-size: 2.7rem;
 height:400px;
 
 }
 
 #last_sentence{
-  display:block;
-  position:relative;
-  top:-710px;
-  font-size: 42px;
+  z-index: 300;
+  position:absolute;
+  bottom:.51020408%; /*5/980*/
+  font-size: 2.7rem;
   color:#f1CC6D;
   text-align:right;
-  width:40%;
   height:300px;
-  margin-left: 500px;
+  margin-left: 400px; /*500/980*/
 }
+
 
 /*#ashleypic{
   position:relative;
@@ -227,11 +196,9 @@ height:400px;
 
 .footer{
 	width:100%;
+  max-width:980px;
   height:140px;
   position:relative;
-  max-width: 980px;
-  margin-top: -704px;
-  clear:both;
 }
 
 .footer_about{
@@ -239,21 +206,20 @@ height:400px;
   height:140px;
   position:relative;
   max-width: 980px;
-  margin-top: -704px;
-  clear:both;
+  margin-top: -71.83673%; /*704/980*/
 }
 
 .footer_contact{
   clear:both;
-  margin-bottom: -140px;
+  margin-bottom: -14.28571%; /*140/980*/
 }
 
 #box{
-	width:60px; /*120/960*/
-  max-width: 120px;
+	width:6.12244%; /*60/980*/
+  max-width: 980px;
 	height:10px;
 	border:5px solid gold; 
-	margin: 30px auto 0 auto;
+	margin: 3.06122% auto 0 auto; /*30/80*/
 }
 #box:hover {
   background-color: indigo;
@@ -264,7 +230,7 @@ height:400px;
   padding-top: 10px;
 }
 .social_icons{
-  margin-left:395px;
+  margin-left:40.30612%; /*395/980*/
 }
 .social_icons li{
   display:inline-block;
@@ -283,14 +249,14 @@ height:400px;
 
 .long{
   overflow:hidden;
-  width:31.25%; /*300/960*/
+  width:30.61%; /*300/980*/
   max-width: 225px;
   height: 225px;
   float:left;
   position:relative;
-  margin-left: 75px; /*15/960*/
-  margin-bottom: 70px;
-  margin-top: 1.5625%; /*15/960*/
+  margin-left: 7.6530%; /*75/980*/
+  margin-bottom: 7.1428%; /*70/980*/
+  margin-top: 1.5306%; /*15/980*/
 }
 
 .long#sea{
@@ -328,7 +294,7 @@ height:400px;
 .long#klimt{
   background-image:url(klimt.jpg);
   background-size: cover;
-  margin-top: -21.3541667%; /*-204/960*/
+  margin-top: -20.81632%; /*-204/980*/
 }
 .long#petrified{
   background-image:url(petrified-wood.jpg);
@@ -353,7 +319,7 @@ height:400px;
   opacity: .6;
   height:100%;
   width:100%;
-  max-width: 960px;
+  max-width: 980px;
   position:absolute;
   top:-100%;
 }
@@ -379,26 +345,26 @@ border:1px solid black;
 
 .box_p{
   width:100%;
-  max-width: 960px;
+  max-width: 980px;
   height: 200px;
   border:1px solid black;
 }
 
 #box_1{
-width:31.25%; /*300/960*/
-max-width: 960px;
+width:31.25%; /*300/980*/
+max-width: 980px;
 height: 200px;
 padding: 5px;
 }
 #box_2{
 width:31.25%; /*300/960*/
-max-width: 960px;
+max-width: 980px;
 height: 200px;
 padding: 5px;
 }
 #box_3{
 width:31.25%; /*300/960*/
-max-width: 960px;
+max-width: 980px;
 height: 200px;
 padding: 5px;
 }
@@ -469,7 +435,27 @@ margin-left:660px;
 margin-top: -340px;
 }
 
+/*media queries*/
 
+@media only screen and (min-width:960px){
+.content{
+  max-width:980px;
+}
+.content_about{
+  max-width: 980px;
+}
+.content_contact{
+  max-width: 980px;
+}
+p#first_sentence{
+  width:28%;
+}
+p#last_sentence{
+width:40%;
+}
+.footer{
+  max-width: 980px;
+}
 
-
+}
 
